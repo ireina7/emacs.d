@@ -4,12 +4,14 @@
 
 ** Language supports
 
--  Haskell / Purescript / Elm
+- Haskell / Purescript / Elm
+- Coq / Idris
 - Ruby / Ruby on Rails
 - CSS / LESS / SASS / SCSS
 - Javascript / Typescript / Coffeescript
 - HTML / HAML / Markdown / Textile / ERB
 - Rust
+- Scala
 - Python
 - Clojure (with Cider and nRepl)
 - Common Lisp (with Slime)
@@ -22,11 +24,10 @@ In particular, there's a nice config for *autocompletion* with
 syntax errors in Ruby, Python, Javascript, Haskell and a number of
 other languages.
 
-
 ** Supported Emacs versions
 
 The config should run on Emacs 24.4 or greater and is designed to
-degrade smoothly - see the Travis build - but note that much newer
+degrade smoothly, but note that much newer
 versions are required for an increasing number of key packages, so to
 get full functionality you should use the latest Emacs version
 available to you.
@@ -35,24 +36,21 @@ Some Windows users might need to follow
 [[http://xn--9dbdkw.se/diary/how_to_enable_GnuTLS_for_Emacs_24_on_Windows/index.en.html][these instructions]]
 to get TLS (ie. SSL) support included in their Emacs.
 
-
 ** Other requirements
 
 To make the most of the programming language-specific support in this
 config, further programs will likely be required, particularly those
 that [[https://github.com/flycheck/flycheck][flycheck]] uses to provide on-the-fly syntax checking.
 
-
 ** Installation
 
 To install, clone this repo to =~/.emacs.d=, i.e. ensure that the
-`init.el` contained in this repo ends up at =~/.emacs.d/init.el=:
+=init.el= contained in this repo ends up at =~/.emacs.d/init.el=:
 
 Upon starting up Emacs for the first time, further third-party
 packages will be automatically downloaded and installed. If you
 encounter any errors at that stage, try restarting Emacs, and possibly
 running =M-x package-refresh-contents= before doing so.
-
 
 ** Updates
 
