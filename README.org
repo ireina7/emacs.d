@@ -83,3 +83,21 @@ If you plan to customize things more extensively, you should probably
 just fork the repo and hack away at the config to make it your own!
 Remember to regularly merge in changes from this repo, so that your
 config remains compatible with the latest package and Emacs versions.
+
+*** Fonts
+I use this in my =custom.el= with /Mac OS/:
+#+BEGIN_SRC elisp
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t
+    (:family "Monaco"
+     :foundry "outline"
+     :slant normal
+     :weight normal
+     :height 170 :width normal)))
+     )
+)
+#+END_SRC
