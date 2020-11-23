@@ -108,26 +108,31 @@ I use this in my =custom.el= with /Mac OS/:
 | Command                               | Key     | Description                         |
 |---------------------------------------+---------+-------------------------------------|
 | *System*                                |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
 |                                       | =M-x=     | Input commands                      |
 | keyboard-quit                         | =C-g=     | Quit current command                |
 | light                                 |         | Change to light theme               |
 | dark                                  |         | Change to dark theme                |
+| package-list-packages                 |         | List packages                       |
 | desktop-clear                         |         | Clear all desktop history           |
 | reload-emacs                          |         | Reload Emacs                        |
 | save-buffers-kill-terminal            | =C-x C-c= | Save and quit Emacs                 |
 |---------------------------------------+---------+-------------------------------------|
 | *Helps*                                 |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
 | describe-key                          | =C-h k=   | Display doc of key binding          |
 | describe-function                     | =C-h f=   | Display doc of function             |
 | describe-variable                     | =C-h v=   | Display doc of variable             |
 |---------------------------------------+---------+-------------------------------------|
 | *Editing*                               |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
 | counsel-find-file                     | =C-x C-f= | Find file                           |
 | company-complete                      | =C-M-/=   | Use company to complete             |
 | cua-set-mark                          | =C-.=     | Set mark                            |
 |                                       |         |                                     |
 |---------------------------------------+---------+-------------------------------------|
 | *Windows*                               |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
 |                                       | =C-x 2=   | Split window vertically             |
 |                                       | =C-x 3=   | Split window horizontally           |
 | delete-window                         | =C-x 0=   | Delete current window               |
@@ -135,6 +140,23 @@ I use this in my =custom.el= with /Mac OS/:
 | resize-window-right                   | =C-}=     | Resize window to right              |
 | resize-window-left                    | =C-{=     | Resize window to left               |
 | resize-window-up                      | =C-^=     | Resize window to upside             |
+|---------------------------------------+---------+-------------------------------------|
+| Org-mode                              |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
+| org-agenda                            | =C-c a=   | Dispatch org-agenda commands        |
+| org-meta-return                       | =M-RET=   | Insert a new heading                |
+| org-shiftright                        | =S-right= | Cycle keyword of the current line   |
+| org-shiftleft                         | =S-left=  | Cycle keyword of the current line   |
+| org-cycle                             | =<tab>=   | TAB-action and visibility cycling   |
+| ...                                   |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
+| Latex                                 |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
+| TeX-command-master                    | =C-c C-c= | Run command on the current document |
+| TeX-view                              | =C-c C-v= | Start a viewer                      |
+| ...                                   |         |                                     |
+|---------------------------------------+---------+-------------------------------------|
+| Proof General                         |         |                                     |
 |---------------------------------------+---------+-------------------------------------|
 | ...                                   |         |                                     |
 |---------------------------------------+---------+-------------------------------------|
