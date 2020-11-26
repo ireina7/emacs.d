@@ -211,7 +211,15 @@
   (recenter)
   )
 
-(global-set-key (kbd "C-M-y") 'move-to-next-line-and-recenter)
+(defun move-to-previous-line-and-recenter ()
+  (interactive)
+  (previous-line)
+  (recenter)
+  )
+
+
+(global-set-key (kbd "C-M->") 'move-to-next-line-and-recenter)
+(global-set-key (kbd "C-M-<") 'move-to-previous-line-and-recenter)
 
 
 

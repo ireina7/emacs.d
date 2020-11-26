@@ -30,7 +30,8 @@
 | counsel-find-file                     | =C-x C-f=   | Find file                               |
 | company-complete                      | =C-M-/=     | Use company to complete                 |
 | cua-set-mark                          | =C-.=       | Set mark                                |
-| move-to-next-line-and-recenter        | =C-M-y=     | Move to next line and recenter cursor   |
+| move-to-next-line-and-recenter        | =C-M->=     | Move to next line and recenter cursor   |
+| move-to-previous-line-and-recenter    | =C-M-<=     | Move to previous line and recenter      |
 |                                       |           |                                         |
 |---------------------------------------+-----------+-----------------------------------------|
 | *Windows*                               |           |                                         |
