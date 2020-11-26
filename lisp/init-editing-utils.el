@@ -204,6 +204,15 @@
 ;; (global-set-key "\M-n"  (lambda () (interactive) (scroll-up-line   1)) )
 ;; (global-set-key "\M-p"  (lambda () (interactive) (scroll-down-line 1)) )
 
+;; Useful Scrolling
+(defun move-to-next-line-and-recenter ()
+  (interactive)
+  (next-line)
+  (recenter)
+  )
+
+(global-set-key (kbd "C-M-y") 'move-to-next-line-and-recenter)
+
 
 
 

@@ -368,9 +368,12 @@ typical word processor."
    `((R . t)
      (ditaa . t)
      (dot . t)
+     (gnuplot . t)
      (emacs-lisp . t)
      (gnuplot . t)
-     (haskell . nil)
+     (haskell . t)
+     (scala . nil)
+     (C . t)
      (latex . t)
      (ledger . t)
      (ocaml . nil)
@@ -378,10 +381,18 @@ typical word processor."
      (plantuml . t)
      (python . t)
      (ruby . t)
+     (scheme . t)
+     (js . t)
      (screen . nil)
      (,(if (locate-library "ob-sh") 'sh 'shell) . t)
      (sql . t)
      (sqlite . t))))
+
+
+;;; JavaScript settings
+;; This is a patch for a bug:(
+(setq org-babel-js-function-wrapper
+      "process.stdout.write(require('util').inspect(function(){\n%s\n}(), { maxArrayLength: null, maxStringLength: null, breakLength: Infinity, compact: true }))")
 
 
 ;;; LaTeX settings
